@@ -465,12 +465,12 @@ function mod.accept(modifier)
         function() end
       )
     end)
-    if not ok then
-      vim.notify(
-        table.concat({ "[Copilot] failed to notify_accepted for: " .. suggestion.text, "Error: " .. err }, "\n\n"),
-        vim.log.levels.ERROR
-      )
-    end
+    -- if not ok then
+    --   vim.notify(
+    --     table.concat({ "[Copilot] failed to notify_accepted for: " .. suggestion.text, "Error: " .. err }, "\n\n"),
+    --     vim.log.levels.ERROR
+    --   )
+    -- end
   end)
 
   clear_preview()
